@@ -1,0 +1,84 @@
+$green-color: #6d9f71;
+
+.App {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #3e4e50;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.title {
+  font-size: 8rem;
+  margin: 0;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.difficulty {
+  justify-self: center;
+  color: white;
+  font-size: large;
+
+  .range {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.row {
+  display: flex;
+}
+
+.block {
+  border: 1px solid black;
+  padding: 5px;
+  width: 1.25rem;
+  height: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f7fff7;
+}
+
+.new-game {
+  margin-top: 15px;
+  background-color: #6d9f71;
+  color: white;
+  border: 0;
+  border-radius: 4px;
+  padding: 7px 24px;
+  font-size: xx-large;
+  cursor: pointer;
+}
+
+.hidden {
+  background-color: #e6aa68;
+  cursor: pointer;
+}
+
+.credits {
+  position: absolute;
+  bottom: 0;
+  color: whitesmoke;
+  font-size: x-large;
+  a {
+    color: $green-color;
+    text-decoration: none;
+  }
+}
+
+@media screen and (max-width: 678px) {
+  .title {
+    font-size: 4rem;
+  }
+
+  .credits {
+    font-size: large;
+  }
+}
